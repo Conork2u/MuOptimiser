@@ -38,4 +38,4 @@ sin(dec) =  0.086
 sin(dec) =  0.5
 ```
 
-The public code keeps that structure but removes the notebook-state dependency. The pipeline is now data loading, empirical survival calculation, gamma survival fitting, `mu` optimisation, and reproducible output generation.
+I use the same structure here: load the histograms, build empirical survival curves, fit the gamma tail, optimise `mu`, and write outputs that I can reproduce later.
