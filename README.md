@@ -83,4 +83,4 @@ fit_<index>.png
 
 ## Notes
 
-The original notebook exploration is not part of the public package. This repository is now the reusable implementation: the Gnosis data format, the GammaMu optimiser idea, and a single p-value definition based on empirical and fitted survival functions.
+The exploratory notebooks were useful while I was testing the analysis, but I keep this repo focused on the cleaned implementation: the Gnosis histogram format, the GammaMu optimiser idea, and one consistent p-value definition based on empirical and fitted survival functions.
