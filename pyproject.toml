@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mu-optimiser"
+version = "0.1.0"
+description = "Optimise gamma-tail TS cuts for IceCube p-value calibration."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.7",
+  "numpy>=1.24",
+  "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+]
+
+[project.scripts]
+mu-optimiser = "mu_optimiser.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mu_optimiser*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

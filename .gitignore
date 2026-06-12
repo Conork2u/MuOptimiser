@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.test_deps/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local data and generated analysis products
+*.npz
+*.npy
+outputs/
+figures/
+plots/
+data/
+
+# Keep exploratory notebooks out of the public package.
+*.ipynb
+.ipynb_checkpoints/
+notebooks/
+legacy_notebooks/
