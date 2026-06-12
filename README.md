@@ -4,7 +4,7 @@ I use this project to calibrate p-values for IceCube public neutrino-data point-
 
 The core problem is that the test-statistic background distribution changes with declination. Direct frequentist counting is reliable where there are many pseudoexperiments, but it becomes noisy in the high-TS tail where the p-values I care about are smallest. This code fits a gamma survival model to the tail of each declination band and optimises the low-TS cut, `mu`, used for that fit.
 
-The method is based on my DESY work on p-value estimation for an unbinned likelihood analysis of IceCube public data. I keep a short research-context note here:
+The method is from my work at DESY on p-value estimation for an unbinned likelihood analysis of IceCube public data. I keep a short research-context note here:
 
 - [DESY research context](docs/desy-research.md)
 - [Method notes](docs/method.md)
