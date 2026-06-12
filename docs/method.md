@@ -48,9 +48,9 @@ There is also a `critical-ts` objective. It compares the empirical and fitted TS
 
 The gamma fit is intended for the tail. If I need p-values below the optimised cut, I use the empirical survival curve directly rather than forcing the analytic model into the distorted low-TS region.
 
-## Why Gamma Survival Instead Of PDF-To-P-Value
+## Why Gamma Survival
 
-The old exploratory work mixed density fits and survival-curve comparisons. This version keeps the definition consistent:
+One thing I keep explicit here is the distinction between a density and a survival curve:
 
 ```text
 empirical p-value  = empirical survival
@@ -58,4 +58,4 @@ fitted p-value     = gamma survival
 optimisation loss  = distance between those p-values
 ```
 
-That avoids fitting a PDF to a curve that is already an anti-cumulative probability.
+That keeps the fit tied to the p-value definition I am actually using.
